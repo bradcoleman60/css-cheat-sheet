@@ -1,12 +1,62 @@
 * {
-background-color: darkblue;
-font-family: 'Courier New', Courier, monospace;
-color:white;
-
-
+    background-color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
 }
 
+body {
+    font-size: 16px;
+    display: flex;
+    /* flex-direction: column; */
+    min-height: 100px;
+    /* justify-content: flex-start; */
+  }
+
+  
 header h1 {
 
     font-size: 42px;
 }
+
+main {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    width: 100%;
+  }
+  .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+
+  }
+
+  .card h2{
+
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .linear-gradient-background {
+background-image: linear-gradient(
+rgba(232, 102, 236, 0.3) 0%,
+rgba(232, 102,236, 0.6) 100%
+
+);
+
+  }
+
+
+
+
+
+  

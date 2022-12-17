@@ -7,6 +7,7 @@
 header {
   display: block;
   text-align: center;
+  padding-bottom: 30px;
 }
   
 header h1 {
@@ -21,49 +22,52 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    /* grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-    width: 100%; */
- 
+    gap: 30px;
+    padding: 50px;
+     
   }
 
-.grid-container .card {
+.grid-container .card  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 25%;
-    border: 1px solid yellow;
-    padding: 10px;
+    border: 3px dotted yellow;
+    padding: 30px;
     font-size: 15px;
     text-align: left;
     flex-grow: 4;
-    /* flex: 1 0 0; */
+    
   }
 
  .card h2{
     font-size: 30px;
-    text-align: left;
+    text-align: center;
     border: 5px solid yellow;
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
-    margin-top: -30px;
+    margin-top: -50px;
+    
   }
+
+.card h2:hover{
+    background-color: red;
+
+}
 
 .instructions {
 background-image: linear-gradient(
 rgba(232, 102, 236, 0.3) 0%,
-rgba(232, 102,236, 0.6) 100%
-);
+rgba(232, 102,236, 0.6) 100%)
+;
 }
 
 @media screen and (max-width: 922px) {
   main,
-  .grid-container {
-    width: 30%;
+  .grid-container, .card {
+    width: 90%;
   }
-}
+} 
 
 
 

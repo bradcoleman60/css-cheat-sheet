@@ -9,46 +9,79 @@
 
 <header>
         <h1>CSS Cheat Sheet</h1>
-        
-    </nav>
-
+        <h2>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy!</h2>
 </header>
-
 
 <body>
 
     
     <main>
         <div class="grid-container">
-            <div class="card" class="linear-gradient-background" >
+            <div class="card">
                 <h2>Flexbox Row</h2>
                 <p>Use these three properties to create a Flexbox row layout</p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .row { <br>
+                display: flex; <br>
+                flex-direction: row; <br>
+                flex-wrap: wrap; <br>
+                } 
+                </section>
             </div>
-            <div class="card" class="linear-gradient-background">
+            <div class="card">
                 <h2>Flexbox Column</h2>
                 <p>Use this to create a Flexbox Column layout</p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .column { <br>
+                display: flex; <br>
+                flex-direction: column; <br>
+                } 
+                </section>
             </div>
             <div class="card">
                 <h2>CSS Grid Layout</h2>
                 <p>Build a 12-column layout using CSS Grid</p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .grid { <br>
+                display: grid; <br>
+                width: 100%; <br>
+                grid-template-columns: <br>
+                repeat(12, 1fr)
+                } 
+                </section>
             </div>  
             <div class="card">
                 <h2>Linear Gradients</h2>
                 <p>This will create a background linear Gradients from top to bottom</p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .linear-gradient-background  <br>
+                background-image: linear-gradient( <br>
+                    rgba(232, 102, 236, 0.3) 0%, <br>
+                    rgba(232, 102, 236, 0.6) 100% <br>
+                ); <br>
+                }
+                </section>
             </div>
             <div class="card">
                 <h2>Box Transition Glow</h2>
                 <p>Use transition and box shadows to glow on hover</p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .code-card .card-header { <br>
+                border-radius: 8px; <br>
+                transition: all 0.5s ease-in- <br>
+                out; <br>
+                } <br>
+                }
+                </section>
             </div>
             <div class="card">
                 <h2>Overlay Card with Title</h2>
                 <p>Use position properties and negative margins to raise eleements higher than thier natural starting points </p>
-                <img src="#" alt="flexblox snippet"/>
+                <section class="instructions">
+                .card-header { <br>
+                position: relative; <br>
+                margin-top: -20px; <br>
+                }
             </div>  
             
           </div>

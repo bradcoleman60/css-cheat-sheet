@@ -4,57 +4,61 @@
     color:white;
 }
 
-body {
-    font-size: 16px;
-    display: flex;
-    /* flex-direction: column; */
-    min-height: 100px;
-    /* justify-content: flex-start; */
-  }
-
+header {
+  display: block;
+  text-align: center;
+}
   
 header h1 {
-
-    font-size: 42px;
+  display: block;
 }
 
-main {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-  }
+header h2 {
+  display: inline-block; 
+}
 
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
-    width: 100%;
+    width: 100%; */
+ 
   }
-  .card {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+
+.grid-container .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33%;
+    border: 1px solid yellow;
+    padding: 10px;
     font-size: 15px;
     text-align: left;
-
+    flex: 1 0 0;
   }
 
-  .card h2{
-
+ .card h2{
     font-size: 30px;
     text-align: left;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -30px;
   }
 
-  .linear-gradient-background {
+  .card p {
+    background-color: none;
+  }
+
+.instructions {
 background-image: linear-gradient(
 rgba(232, 102, 236, 0.3) 0%,
 rgba(232, 102,236, 0.6) 100%
-
 );
-
-  }
-
+}
 
 
 

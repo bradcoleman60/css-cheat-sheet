@@ -21,6 +21,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     /* grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 10px;
@@ -32,12 +33,13 @@ header h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 33%;
+    width: 25%;
     border: 1px solid yellow;
     padding: 10px;
     font-size: 15px;
     text-align: left;
-    flex: 1 0 0;
+    flex-grow: 4;
+    /* flex: 1 0 0; */
   }
 
  .card h2{
@@ -49,15 +51,18 @@ header h2 {
     margin-top: -30px;
   }
 
-  .card p {
-    background-color: none;
-  }
-
 .instructions {
 background-image: linear-gradient(
 rgba(232, 102, 236, 0.3) 0%,
 rgba(232, 102,236, 0.6) 100%
 );
+}
+
+@media screen and (max-width: 922px) {
+  main,
+  .grid-container {
+    width: 30%;
+  }
 }
 
 
